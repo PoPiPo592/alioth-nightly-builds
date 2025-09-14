@@ -36,7 +36,7 @@ jobs:
 
       - name: Clone kernel sources
         run: |
-          git clone https://gitlab.postmarketos.org/sm8250-mainline/linux.git --single-branch --branch master --depth 1 ./linux
+          git clone https://gitlab.postmarketos.org/sm8250-mainline/linux.git --single-branch --branch 6.16.0 --depth 1 ./linux
 
       - name: Choose any SM8250 device in pmbootstrap to build kernel
         run: |
