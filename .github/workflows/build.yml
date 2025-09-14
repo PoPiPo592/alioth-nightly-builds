@@ -36,7 +36,7 @@ jobs:
 
       - name: Clone kernel sources
         run: |
-          git clone https://github.com/mainlining/linux.git --single-branch --branch nikroks/alioth --depth 1 ./linux
+          git clone https://gitlab.postmarketos.org/sm8250-mainline/linux.git --single-branch --branch master --depth 1 ./linux
 
       - name: Choose any SM8250 device in pmbootstrap to build kernel
         run: |
@@ -47,7 +47,7 @@ jobs:
           cd linux
           shopt -s expand_aliases
           source ../pmbootstrap/helpers/envkernel.sh
-          make defconfig sm8250.config
+          make defconfig defconfig
           make -j$(nproc)
           pmbootstrap build --envkernel linux-postmarketos-qcom-sm8250-alioth
 
