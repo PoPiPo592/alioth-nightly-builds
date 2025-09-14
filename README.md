@@ -10,4 +10,6 @@ The default user is called `user`, the password is `147147`, just like on offici
 
 ## Downloading
 
-Head to the [Actions tab](https://github.com/N1kroks/alioth-nightly-builds/actions), select the most recent successful run and download the artifact for your device. Extract the Zip, de-compress the rootfs and you're ready to flash!
+Head to the [Actions tab](https://github.com/PoPiPo592/alioth-nightly-builds/actions), select the most recent successful run and download the artifact for your device. Extract the Zip, de-compress the rootfs and you're ready to flash!
+
+All credit goes to Nikroks, I'm mostly keeping this as archival for early builds, while also trying to figure out how to flash it properly
